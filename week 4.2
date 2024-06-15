@@ -1,0 +1,20 @@
+n = int(input())
+
+digit_counts = {}
+
+for digit in str(n):
+
+if digit not in digit_counts:
+
+    digit_counts[digit] = 0
+
+digit_counts[digit] += 1
+non_repeated_count=0
+
+for digits, count in digit_counts.items():
+
+if  count == 1:
+
+          non_repeated_count+=1
+
+    print(non_repeated_count)
