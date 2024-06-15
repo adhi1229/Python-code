@@ -1,0 +1,13 @@
+n = int(input())
+
+sum = 0
+
+for i, digit in enumerate(str(n), start=1):
+
+sum += int(digit)**i
+if sum == n:
+
+print("Yes")
+else:
+
+print("No")
